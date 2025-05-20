@@ -13,7 +13,7 @@ class GoalSerializer(serializers.ModelSerializer):
         model = Goal
         fields = [
             'id', 'user', 'name', 'description', 'category',
-            'unit', 'target_total', 'days',
+            'unit', 'target_total', 'target_daily', 'days',
             'is_permanent', 'is_completed',
             'created_at', 'progress'
         ]
